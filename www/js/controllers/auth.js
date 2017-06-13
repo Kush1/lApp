@@ -17,4 +17,3 @@ app.controller('AuthCtrl', function(Auth) {
         Auth.logout();
     };
 });
-

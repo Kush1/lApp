@@ -5,21 +5,15 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 
-
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAVfE6jTcOzYxayT0aXb8Zr7DsF8Wgb1GM",
+var config = {
+  apiKey: "AIzaSyAVfE6jTcOzYxayT0aXb8Zr7DsF8Wgb1GM",
     authDomain: "loverapp-7d9e2.firebaseapp.com",
     databaseURL: "https://loverapp-7d9e2.firebaseio.com",
     projectId: "loverapp-7d9e2",
     storageBucket: "loverapp-7d9e2.appspot.com",
     messagingSenderId: "171372998103"
-  };
-  firebase.initializeApp(config);
-
-
-
+};
+firebase.initializeApp(config);
 
 var app = angular.module('starter', ['ionic', 'firebase'])
 
@@ -39,8 +33,6 @@ var app = angular.module('starter', ['ionic', 'firebase'])
   });
 })
 
-//.constant('FURL','https://console.firebase.google.com/project/loverapp-7d9e2/overview')
-
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -52,8 +44,7 @@ var app = angular.module('starter', ['ionic', 'firebase'])
 
   .state('login', {
     url: '/login',
-    templateUrl: 'templates/login.html',
-    //controller: 'AuthCtrl as auth'
+    templateUrl: 'templates/login.html'
   })
 
   .state('app.profile', {
